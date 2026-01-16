@@ -1,0 +1,133 @@
+<html>
+<head>
+<style>
+  div{
+    display: inline-block;
+ border:solid 2px black;
+ border-radius:20px;
+ width:auto;
+ margin:20px;
+ padding:20px;
+}
+div img{
+   display: block;             /* Full width image */
+  width: 100%;
+  height:250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+nav li{
+    display:inline-block;
+    padding-right:100px;
+    width:10px;
+    height:20px;
+    background-color: black;
+    color:white;
+    margin-left: 30px;
+    border-radius: 5px;
+    text-align: justify;
+}
+nav{
+position: sticky;
+    width:100%;
+    height:50px;
+    top:0px;
+    background-color: mediumaquamarine;
+}
+nav img{
+    width:30px;
+    height:20px;
+}
+nav ul{
+    display:inline;
+}
+   
+
+</style>
+</head>
+<body >
+
+    <nav>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="ShopEase Logo">
+      <span>ShopEase</span>
+<ul>
+    <li>
+        home
+    </li>
+    
+        <input style="border:solid 2px black;border-radius:20px;" type="text"placeholder="Search something">
+    <li>
+        products
+    </li>
+    <li>
+        favourts
+    </li>
+    <li>
+        login
+    </li>
+</ul>
+    </nav>
+
+    <div>
+        <img src="https://th.bing.com/th/id/OIP.q5hHbxCYwgRNWTr3nPMjzQHaHa?w=185&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Headphones">
+        <h2>Wireless Bluetooth Headphones</h2>
+        <h4>Price: ₹2,499</h4>
+        <p>Description: Noise-cancelling over-ear headphones with deep bass.</p>
+
+    </div>
+    <div>
+        <img src="https://th.bing.com/th/id/OIP.bPjE3IvBwrujueTJPYT9zAHaEK?w=283&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Smart Watch">
+<h2>Smart Watch</h2>
+
+<h4>Price: ₹3,999</h4>
+
+<p>Description: Fitness tracking smartwatch with heart rate monitor.</p>
+    </div>
+    <div>
+        <img src="data:image/webp;base64,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" alt="Gaming Mouse">
+<h2>Gaming Mouse</h2>
+
+<h4>Price: ₹1,299</h4>
+
+<p> RGB gaming mouse with high precision sensor.
+</p>
+    </div>
+    <div>
+  <img src="https://picsum.photos/200?random=1" alt="Wireless Bluetooth Headphones">
+  <h2>Wireless Bluetooth Headphones</h2>
+  <h4>Price: ₹2,499</h4>
+  <p>Description: Noise-cancelling over-ear headphones with deep bass.</p>
+</div>
+
+<div>
+  <img src="https://picsum.photos/200?random=2" alt="Smart Watch">
+  <h2>Smart Watch</h2>
+  <h4>Price: ₹3,999</h4>
+  <p>Description: Fitness tracking smartwatch with heart rate monitor.</p>
+</div>
+
+<div>
+  <img src="https://picsum.photos/200?random=3" alt="Gaming Mouse">
+  <h2>Gaming Mouse</h2>
+  <h4>Price: ₹1,299</h4>
+  <p>Description: RGB gaming mouse with high precision sensor.</p>
+</div>
+
+<div>
+  <img src="https://picsum.photos/200?random=4" alt="Laptop">
+  <h2>Gaming Laptop</h2>
+  <h4>Price: ₹65,999</h4>
+  <p>Description: High-performance gaming laptop with powerful graphics.</p>
+</div>
+
+<div>
+  <img src="https://picsum.photos/200?random=5" alt="Bluetooth Speaker">
+  <h2>Bluetooth Speaker</h2>
+  <h4>Price: ₹1,999</h4>
+  <p>Description: Portable speaker with deep bass and long battery life.</p>
+</div>
+
+</body>
+
+
+</html>
