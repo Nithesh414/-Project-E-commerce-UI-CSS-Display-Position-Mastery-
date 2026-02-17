@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aarav & Diya | Wedding</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Aarav & Diya</h1>
+<p>WE ARE GETTING MARRIED</p>
+<button class="btn" onclick="document.querySelector('.invite-section').scrollIntoView()">View Invitation</button>
+</section>
+
+<!-- INVITATION -->
+<section class="invite-section">
+<div class="invite-card">
+
+<p class="invite-title">THE WEDDING CELEBRATION</p>
+
+<h2 class="couple">Aarav & Diya</h2>
+
+<p class="invite-text">
+Together with their families,<br>
+request the honor of your presence<br>
+at their wedding celebration
+</p>
+
+<div class="divider"></div>
+
+<div class="details">
+<p><strong>24 December 2026</strong></p>
+<p>Saturday | 6:00 PM onwards</p>
+<p>Grand Palace, Chennai</p>
+</div>
+
+<div class="divider"></div>
+
+<p>Reception & Dinner to Follow</p>
+
+</div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown">
+<h2>Countdown to Our Big Day</h2>
+
+<div class="timer">
+<div class="box"><h3 id="days"></h3><p>Days</p></div>
+<div class="box"><h3 id="hours"></h3><p>Hours</p></div>
+<div class="box"><h3 id="minutes"></h3><p>Minutes</p></div>
+<div class="box"><h3 id="seconds"></h3><p>Seconds</p></div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+<img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486">
+<img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf">
+</section>
+
+<!-- RSVP -->
+<section class="rsvp">
+<h2>Confirm Your Presence</h2>
+<input type="text" placeholder="Your Name">
+<br>
+<input type="number" placeholder="Number of Guests">
+<br>
+<button class="btn" onclick="alert('Thank you for your blessings ❤️')">Send RSVP</button>
+</section>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+<source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+</audio>
+
+<div class="music-btn" onclick="toggleMusic()">♪</div>
+
+<script>
+
+function toggleMusic(){
+let music=document.getElementById("bgMusic");
+music.paused ? music.play() : music.pause();
+}
+
+let weddingDate = new Date("Dec 24, 2026 18:00:00").getTime();
+
+setInterval(function(){
+let now = new Date().getTime();
+let distance = weddingDate - now;
+
+document.getElementById("days").innerHTML=Math.floor(distance/(1000*60*60*24));
+document.getElementById("hours").innerHTML=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+document.getElementById("minutes").innerHTML=Math.floor((distance%(1000*60*60))/(1000*60));
+document.getElementById("seconds").innerHTML=Math.floor((distance%(1000*60))/1000);
+},1000);
+
+</script>
+
+</body>
+</html>
